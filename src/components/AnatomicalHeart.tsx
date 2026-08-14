@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import confetti from 'canvas-confetti';
 
 interface AnatomicalHeartProps {
   onHeartClick?: () => void;
 }
 
-export const AnatomicalHeart: React.FC<AnatomicalHeartProps> = ({ onHeartClick }) => {
+export const AnatomicalHeart = ({ onHeartClick }: AnatomicalHeartProps) => {
   const [isBeatingFast, setIsBeatingFast] = useState<boolean>(false);
 
   const handleClick = () => {

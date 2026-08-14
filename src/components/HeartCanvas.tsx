@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface HeartParticle {
   x: number;
@@ -13,7 +13,7 @@ interface HeartParticle {
   color: string;
 }
 
-export const HeartCanvas: React.FC = () => {
+export const HeartCanvas = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {

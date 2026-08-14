@@ -1,4 +1,3 @@
-import React from 'react';
 import { HeartCanvas } from './components/HeartCanvas';
 import confetti from 'canvas-confetti';
 
